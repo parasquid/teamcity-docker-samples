@@ -1,0 +1,5 @@
+teamcity-server-logs/*.log
+teamcity-server-logs/*.lock
+teamcity-server-logs/*.pid
+data_dir/*
+!data_dir/database.properties
