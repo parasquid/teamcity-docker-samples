@@ -47,3 +47,10 @@ services:
       - ./agents/agent-2/conf:/data/teamcity_agent/conf
     environment:
       - DOCKER_IN_DOCKER=start
+  teamcity-agent-3:
+    image: jetbrains/teamcity-agent:${TEAMCITY_VERSION}-linux-sudo
+    privileged: true
+    volumes:
+      - ./agents/agent-3/conf:/data/teamcity_agent/conf
+    environment:
+      - DOCKER_IN_DOCKER=start
